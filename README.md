@@ -1,5 +1,4 @@
 # DAQIO MQTT
-MQTT Library for LabVIEW
 
 #License
 Copyright (c) 2016 daq.io, LLC

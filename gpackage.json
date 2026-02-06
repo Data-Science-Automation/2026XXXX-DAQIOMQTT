@@ -1,0 +1,25 @@
+{
+	"author": {
+		"email": "cmh@dsautomation.com",
+		"name": "Caleb Husovich",
+		"url": "dsautomation.com"
+	},
+	"contributors": [
+		{
+			"email": "cmh@dsautomation.com",
+			"name": "Caleb Husovich",
+			"url": "dsautomation.com"
+		}
+	],
+	"description": "cleanedup fork of the DAQIO MQTT client library",
+	"keywords": [
+		"mqtt",
+		"client",
+		"daqio"
+	],
+	"license": "ISC",
+	"lvversion": ">=20",
+	"name": "@dsa/2026xxxx-daqiomqtt",
+	"private": true,
+	"version": "0.1.0"
+}
