@@ -4,6 +4,7 @@
 		"name": "Caleb Husovich",
 		"url": "dsautomation.com"
 	},
+	"bugs": "https://github.com/Data-Science-Automation/2026XXXX-DAQIOMQTT/issues",
 	"contributors": [
 		{
 			"email": "cmh@dsautomation.com",
@@ -12,6 +13,7 @@
 		}
 	],
 	"description": "cleanedup fork of the DAQIO MQTT client library",
+	"homepage": "https://github.com/Data-Science-Automation/2026XXXX-DAQIOMQTT",
 	"keywords": [
 		"mqtt",
 		"client",
@@ -19,7 +21,8 @@
 	],
 	"license": "ISC",
 	"lvversion": ">=20",
-	"name": "@dsa/2026xxxx-daqiomqtt",
+	"name": "@dsa/2026XXXX-DAQIOMQTT",
 	"private": true,
+	"repository": "https://github.com/Data-Science-Automation/2026XXXX-DAQIOMQTT",
 	"version": "0.1.0"
 }
