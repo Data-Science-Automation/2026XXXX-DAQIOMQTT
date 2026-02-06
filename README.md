@@ -1,4 +1,4 @@
-# LVMQTT
+# DAQIO MQTT
 MQTT Library for LabVIEW
 
 #License
