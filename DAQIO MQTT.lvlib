@@ -33,14 +33,14 @@
 	<Property Name="Serialized ACL" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Controls" Type="Folder">
-		<Item Name="Conn_FGV_Cmds.ctl" Type="VI" URL="../Controls/Conn_FGV_Cmds.ctl"/>
-		<Item Name="Conn_Stat_FGV_Cmds.ctl" Type="VI" URL="../Controls/Conn_Stat_FGV_Cmds.ctl"/>
 		<Item Name="Connect Flags.ctl" Type="VI" URL="../Controls/Connect Flags.ctl"/>
-		<Item Name="Connection_Return_Codes.ctl" Type="VI" URL="../Controls/Connection_Return_Codes.ctl"/>
-		<Item Name="DUP_Flag.ctl" Type="VI" URL="../Controls/DUP_Flag.ctl"/>
+		<Item Name="Connection FGV Actions.ctl" Type="VI" URL="../Controls/Connection FGV Actions.ctl"/>
+		<Item Name="Connection Return Codes.ctl" Type="VI" URL="../Controls/Connection Return Codes.ctl"/>
+		<Item Name="Connection Status FGV Actions.ctl" Type="VI" URL="../Controls/Connection Status FGV Actions.ctl"/>
+		<Item Name="DUP Flag.ctl" Type="VI" URL="../Controls/DUP Flag.ctl"/>
 		<Item Name="MessageType.ctl" Type="VI" URL="../Controls/MessageType.ctl"/>
-		<Item Name="Protocol_Name.ctl" Type="VI" URL="../Controls/Protocol_Name.ctl"/>
-		<Item Name="Protocol_Version.ctl" Type="VI" URL="../Controls/Protocol_Version.ctl"/>
+		<Item Name="Protocol Name.ctl" Type="VI" URL="../Controls/Protocol Name.ctl"/>
+		<Item Name="Protocol Version.ctl" Type="VI" URL="../Controls/Protocol Version.ctl"/>
 		<Item Name="Publish Metadata.ctl" Type="VI" URL="../Controls/Publish Metadata.ctl"/>
 		<Item Name="QoS.ctl" Type="VI" URL="../Controls/QoS.ctl"/>
 		<Item Name="Retain_Flag.ctl" Type="VI" URL="../Controls/Retain_Flag.ctl"/>
@@ -48,59 +48,60 @@
 		<Item Name="Will Info.ctl" Type="VI" URL="../Controls/Will Info.ctl"/>
 	</Item>
 	<Item Name="Examples" Type="Folder">
-		<Item Name="MQTT_Read_Subscribed_Topics.vi" Type="VI" URL="../examples/MQTT_Read_Subscribed_Topics.vi"/>
-		<Item Name="MQTT_Simple_Connect_and_Publish.vi" Type="VI" URL="../examples/MQTT_Simple_Connect_and_Publish.vi"/>
-		<Item Name="MQTT_Simple_Connect_and_Subscribe.vi" Type="VI" URL="../examples/MQTT_Simple_Connect_and_Subscribe.vi"/>
+		<Item Name="Read Subscribed Topics.vi" Type="VI" URL="../examples/Read Subscribed Topics.vi"/>
+		<Item Name="Simple Connect and Publish.vi" Type="VI" URL="../examples/Simple Connect and Publish.vi"/>
+		<Item Name="Simple Connect and Subscribe.vi" Type="VI" URL="../examples/Simple Connect and Subscribe.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="Send Packets" Type="Folder">
-			<Item Name="Send CONNACK.vi" Type="VI" URL="../Sub/Send CONNACK.vi"/>
-			<Item Name="SEND PUBACK.vi" Type="VI" URL="../Sub/SEND PUBACK.vi"/>
-			<Item Name="SEND PUBCOMP.vi" Type="VI" URL="../Sub/SEND PUBCOMP.vi"/>
-			<Item Name="SEND PUBREC.vi" Type="VI" URL="../Sub/SEND PUBREC.vi"/>
-			<Item Name="Send PUBREL.vi" Type="VI" URL="../Sub/Send PUBREL.vi"/>
-			<Item Name="SEND SUBACK.vi" Type="VI" URL="../Sub/SEND SUBACK.vi"/>
-			<Item Name="Send UNSUBACK.vi" Type="VI" URL="../Sub/Send UNSUBACK.vi"/>
+			<Item Name="Send CONNACK.vi" Type="VI" URL="../Private/Send CONNACK.vi"/>
+			<Item Name="SEND PUBACK.vi" Type="VI" URL="../Private/SEND PUBACK.vi"/>
+			<Item Name="SEND PUBCOMP.vi" Type="VI" URL="../Private/SEND PUBCOMP.vi"/>
+			<Item Name="SEND PUBREC.vi" Type="VI" URL="../Private/SEND PUBREC.vi"/>
+			<Item Name="Send PUBREL.vi" Type="VI" URL="../Private/Send PUBREL.vi"/>
+			<Item Name="SEND SUBACK.vi" Type="VI" URL="../Private/SEND SUBACK.vi"/>
+			<Item Name="Send UNSUBACK.vi" Type="VI" URL="../Private/Send UNSUBACK.vi"/>
+		</Item>
+		<Item Name="SubVis" Type="Folder">
+			<Item Name="Build Connect Flags Byte.vi" Type="VI" URL="../Private/Build Connect Flags Byte.vi"/>
+			<Item Name="Build Fixed Header.vi" Type="VI" URL="../Private/Build Fixed Header.vi"/>
+			<Item Name="Build MQTT Pub Payload String.vi" Type="VI" URL="../Private/Build MQTT Pub Payload String.vi"/>
+			<Item Name="Build MQTT String.vi" Type="VI" URL="../Private/Build MQTT String.vi"/>
+			<Item Name="Build Variable Header ConnACK.vi" Type="VI" URL="../Private/Build Variable Header ConnACK.vi"/>
+			<Item Name="Build Variable Header Connect.vi" Type="VI" URL="../Private/Build Variable Header Connect.vi"/>
+			<Item Name="Build Variable Header Publish.vi" Type="VI" URL="../Private/Build Variable Header Publish.vi"/>
+			<Item Name="Connection Status FGV.vi" Type="VI" URL="../Private/Connection Status FGV.vi"/>
+			<Item Name="Create Remaining Length.vi" Type="VI" URL="../Private/Create Remaining Length.vi"/>
+			<Item Name="Get Number from Remaining Length.vi" Type="VI" URL="../Private/Get Number from Remaining Length.vi"/>
+			<Item Name="Read MQTT String.vi" Type="VI" URL="../Private/Read MQTT String.vi"/>
+			<Item Name="Read Variable Header.vi" Type="VI" URL="../Private/Read Variable Header.vi"/>
+			<Item Name="Sub_Read_Fixed_Header.vi" Type="VI" URL="../Private/Sub_Read_Fixed_Header.vi"/>
+			<Item Name="TCP Connection FGV.vi" Type="VI" URL="../Private/TCP Connection FGV.vi"/>
 		</Item>
 		<Item Name="TCP" Type="Folder">
-			<Item Name="Close TCP Connection.vi" Type="VI" URL="../Sub/Close TCP Connection.vi"/>
-			<Item Name="Open TCP Connection.vi" Type="VI" URL="../Sub/Open TCP Connection.vi"/>
-			<Item Name="TCP Read.vi" Type="VI" URL="../Sub/TCP Read.vi"/>
-			<Item Name="TCP Write.vi" Type="VI" URL="../Sub/TCP Write.vi"/>
+			<Item Name="Close TCP Connection.vi" Type="VI" URL="../Private/Close TCP Connection.vi"/>
+			<Item Name="Open TCP Connection.vi" Type="VI" URL="../Private/Open TCP Connection.vi"/>
+			<Item Name="TCP Read.vi" Type="VI" URL="../Private/TCP Read.vi"/>
+			<Item Name="TCP Write.vi" Type="VI" URL="../Private/TCP Write.vi"/>
 		</Item>
-		<Item Name="Build Fixed Header.vi" Type="VI" URL="../Sub/Build Fixed Header.vi"/>
 	</Item>
-	<Item Name="ReadResponse" Type="Folder">
-		<Item Name="MQTT_ConnAck_Read.vi" Type="VI" URL="../ReadResponse/MQTT_ConnAck_Read.vi"/>
-		<Item Name="MQTT_PingResp.vi" Type="VI" URL="../ReadResponse/MQTT_PingResp.vi"/>
-		<Item Name="MQTT_PubAck_Read.vi" Type="VI" URL="../ReadResponse/MQTT_PubAck_Read.vi"/>
-		<Item Name="MQTT_PubComp_Read.vi" Type="VI" URL="../ReadResponse/MQTT_PubComp_Read.vi"/>
-		<Item Name="MQTT_PubRec_Read.vi" Type="VI" URL="../ReadResponse/MQTT_PubRec_Read.vi"/>
-		<Item Name="MQTT_PubRel_Read.vi" Type="VI" URL="../ReadResponse/MQTT_PubRel_Read.vi"/>
-		<Item Name="MQTT_SubAck_Read.vi" Type="VI" URL="../ReadResponse/MQTT_SubAck_Read.vi"/>
+	<Item Name="Public" Type="Folder">
+		<Item Name="Read Responses" Type="Folder">
+			<Item Name="Read CONNACK.vi" Type="VI" URL="../Public/Read CONNACK.vi"/>
+			<Item Name="Read PINGRESP.vi" Type="VI" URL="../Public/Read PINGRESP.vi"/>
+			<Item Name="Read PUBACK.vi" Type="VI" URL="../Public/Read PUBACK.vi"/>
+			<Item Name="Read PUBCOMP.vi" Type="VI" URL="../Public/Read PUBCOMP.vi"/>
+			<Item Name="Read PUBREC.vi" Type="VI" URL="../Public/Read PUBREC.vi"/>
+			<Item Name="Read PUBREL.vi" Type="VI" URL="../Public/Read PUBREL.vi"/>
+			<Item Name="Read SUBACK.vi" Type="VI" URL="../Public/Read SUBACK.vi"/>
+		</Item>
+		<Item Name="Connect.vi" Type="VI" URL="../Public/Connect.vi"/>
+		<Item Name="Disconnect.vi" Type="VI" URL="../Public/Disconnect.vi"/>
+		<Item Name="Ping.vi" Type="VI" URL="../Public/Ping.vi"/>
+		<Item Name="Publish.vi" Type="VI" URL="../Public/Publish.vi"/>
+		<Item Name="Read Published Message.vi" Type="VI" URL="../Public/Read Published Message.vi"/>
+		<Item Name="Send Subscribe.vi" Type="VI" URL="../Public/Send Subscribe.vi"/>
+		<Item Name="Unsubscribe.vi" Type="VI" URL="../Public/Unsubscribe.vi"/>
 	</Item>
-	<Item Name="Sub" Type="Folder">
-		<Item Name="Sub_Build_Connect_Flags_Byte.vi" Type="VI" URL="../Sub/Sub_Build_Connect_Flags_Byte.vi"/>
-		<Item Name="Sub_Build_MQTT_PubPayload_String.vi" Type="VI" URL="../Sub/Sub_Build_MQTT_PubPayload_String.vi"/>
-		<Item Name="Sub_Build_MQTT_String.vi" Type="VI" URL="../Sub/Sub_Build_MQTT_String.vi"/>
-		<Item Name="Sub_Build_Variable_Header_ConnACK.vi" Type="VI" URL="../Sub/Sub_Build_Variable_Header_ConnACK.vi"/>
-		<Item Name="Sub_Build_Variable_Header_Connect.vi" Type="VI" URL="../Sub/Sub_Build_Variable_Header_Connect.vi"/>
-		<Item Name="Sub_Build_Variable_Header_Publish.vi" Type="VI" URL="../Sub/Sub_Build_Variable_Header_Publish.vi"/>
-		<Item Name="Sub_Conn_Status_FGV.vi" Type="VI" URL="../Sub/Sub_Conn_Status_FGV.vi"/>
-		<Item Name="Sub_Connect_FGV.vi" Type="VI" URL="../Sub/Sub_Connect_FGV.vi"/>
-		<Item Name="Sub_Create_Remaining_Length.vi" Type="VI" URL="../Sub/Sub_Create_Remaining_Length.vi"/>
-		<Item Name="Sub_Get_Number_from_Remaining_Length.vi" Type="VI" URL="../Sub/Sub_Get_Number_from_Remaining_Length.vi"/>
-		<Item Name="Sub_Read_Fixed_Header.vi" Type="VI" URL="../Sub/Sub_Read_Fixed_Header.vi"/>
-		<Item Name="Sub_Read_MQTT_String.vi" Type="VI" URL="../Sub/Sub_Read_MQTT_String.vi"/>
-		<Item Name="Sub_Read_Variable_Header.vi" Type="VI" URL="../Sub/Sub_Read_Variable_Header.vi"/>
-		<Item Name="Sub_Wait.vi" Type="VI" URL="../Sub/Sub_Wait.vi"/>
-	</Item>
-	<Item Name="Connect.vi" Type="VI" URL="../Connect.vi"/>
-	<Item Name="MQTT_Disconnect.vi" Type="VI" URL="../MQTT_Disconnect.vi"/>
-	<Item Name="MQTT_PingReq.vi" Type="VI" URL="../MQTT_PingReq.vi"/>
-	<Item Name="MQTT_Read_Published_Message.vi" Type="VI" URL="../MQTT_Read_Published_Message.vi"/>
-	<Item Name="Publish.vi" Type="VI" URL="../Publish.vi"/>
-	<Item Name="Send Subscribe.vi" Type="VI" URL="../Send Subscribe.vi"/>
-	<Item Name="Unsubscribe.vi" Type="VI" URL="../Unsubscribe.vi"/>
 </Library>
